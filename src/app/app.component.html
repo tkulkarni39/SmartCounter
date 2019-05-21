@@ -1,0 +1,12 @@
+<p>
+  <input type="number" 
+    (keyup.enter)="counterNumber = vanillaInput.value" 
+    #vanillaInput>
+  <button 
+    (click)="counterNumber = vanillaInput.value">
+    Update number
+  </button>
+</p>
+
+<h3> {{ currentNumber }}</h3>
+<router-outlet></router-outlet>
